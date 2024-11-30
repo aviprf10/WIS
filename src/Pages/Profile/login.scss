@@ -1,0 +1,60 @@
+.right-side {
+  background-color: #4285f4;
+}
+.right-side-container {
+  padding: 60px 30px;
+}
+.login-box {
+  line-height: 18px;
+}
+.img {
+  width: 100%;
+}
+.img-fluid {
+  width: 70%;
+}
+.login {
+  font-weight: 700px;
+}
+.login-text {
+  color: #8692a6;
+}
+.label-field {
+  font-size: 13px;
+  color: #696f79;
+  font-weight: 500px !important;
+}
+.label-check {
+  color: #696f79;
+}
+
+.login-button {
+  background-color: #4285f4;
+}
+
+// .input-group-text{
+//   position: absolute; top: 31px; right: 0; background:none; border:none;
+// }
+
+/* PasswordInput.css */
+.input-group {
+  position: relative;
+}
+
+.input-wrapper{position: relative;}
+
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.error-message {
+  position: absolute;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

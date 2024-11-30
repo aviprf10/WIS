@@ -1,0 +1,74 @@
+.outlet-main {
+  min-height: 92vh;
+  padding-top: 90px;
+  background-color: #f9f9fd;
+}
+.vehicle-insurance-main-layout-container {
+  display: flex;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+
+  .vehicle-insurance-main-layout-sidebar {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: transparent;
+    padding: 0.4rem 0.3rem;
+    transition: width 0.5s ease;
+    overflow-y: auto;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ec9b3b;
+    border-radius: 99px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ec9b3b;
+  }
+
+  .vehicle-insurance-main-layout-container-page {
+    margin-left: 220px;
+    flex-grow: 1;
+    padding: 1rem 0.2rem 0.2rem 1rem;
+    overflow: visible;
+    transition: margin-left 0.4s ease;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .vehicle-insurance-main-layout-container-page.closed-drawer {
+    margin-left: 185px;
+  }
+
+  .vehicle-insurance-main-layout-container-page.open-drawer {
+    margin-left: 65px;
+  }
+  .open-drawer {
+    width: calc(100% - 65px) !important;
+  }
+
+  .closed-drawer {
+    width: calc(100% - 185px) !important;
+  }
+
+  @media screen and (max-width: 858px) {
+    // .closed-drawer {
+    //   width: calc(100% - 170px) !important;
+    // }
+  }
+}
